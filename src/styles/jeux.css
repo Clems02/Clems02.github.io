@@ -1,0 +1,38 @@
+.game-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-block h1 {
+    padding: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 32px;
+    max-width: 80%;
+    gap: 50px;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid grey;
+    padding: 20px;
+}
+
+.game-item img {
+    height: 100px;
+    width: 100px;
+}
+
+.game-item span {
+    font-size: 1.5em;
+}

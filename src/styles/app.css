@@ -1,0 +1,8 @@
+.app-block {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    flex: 1;
+
+}

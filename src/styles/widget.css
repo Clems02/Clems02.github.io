@@ -1,0 +1,28 @@
+.widget-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.widget-img {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.widget-name {
+    color: rgb(77, 78, 80);
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+
+.active {
+    background-color: aquamarine;
+}
+
+.widget-block:not(.active):hover {
+    background-color: rgb(222, 248, 240);
+}
