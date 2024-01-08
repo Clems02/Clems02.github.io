@@ -1,8 +1,19 @@
-.app-block {
-    max-width: 1200px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    flex: 1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.main {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.block-central {
+    background-color: aqua;
+    width: 70em;
+    margin: 15px;
+    border-radius: 10px;
+    min-height: 60vh;
 }

@@ -5,18 +5,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: cadetblue;
-    border-radius: 0 0 1.2rem 1.2rem;
+    border-bottom: 8px solid rgb(44, 128, 131);
+    height: 6em;
+
+    border-radius: 60px;
 }
 
 .navBar-widget {
     display: flex;
-    height: 100%;
+    height: 60%;
 }
 
 .navBar-hamburger {
     position: absolute;
-    top: 1.5rem;
-    right: 1.6rem;
+    top: 2em;
+    right: 2em;
     flex-direction: column;
     justify-content: space-between;
     width: 2.25rem;
