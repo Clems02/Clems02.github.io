@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+html {
+    font-family: "Roboto",Arial,sans-serif;
+
+}
+
 
 .main {
     background-color: red;
@@ -16,4 +23,5 @@
     margin: 15px;
     border-radius: 10px;
     min-height: 60vh;
+    overflow: hidden;
 }

@@ -1,38 +1,61 @@
-.game-block {
+.head {
+    background-color: #7a3;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.head h1 {
+    color: white;
+    padding: 0 15px;
+    background: rgba(0,0,0,0.15);
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cathead {
+    list-style-type: none;
+    display: flex;
     align-items: center;
-    text-align: center;
+    height: 48px;
+    padding-left: 90px;
+    background: url(../assets/cathead.png) left center no-repeat;
 }
 
-.game-block h1 {
-    padding: 20px;
+.cathead li {
+    padding: 5px 15px;
+    margin: 0 10px;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.15);
 }
 
-.game-list {
+.catdesc {
+    display: flex;
+    line-height: 16px;
+    background: #fafafa;
+}
+
+
+.desc {
+    text-align: justify;
+    color: #777;
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.catcontent {
+    border-top: dotted 1px #ccc;
+    overflow: hidden;
+    background: #eee;
+}
+
+.contentList {
     display: flex;
     flex-wrap: wrap;
+    padding: 15px 5px 0 5px;
     justify-content: space-around;
-    padding: 32px;
-    max-width: 80%;
-    gap: 50px;
 }
 
-.game-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid grey;
-    padding: 20px;
-}
-
-.game-item img {
-    height: 100px;
-    width: 100px;
-}
-
-.game-item span {
-    font-size: 1.5em;
-}

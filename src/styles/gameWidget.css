@@ -1,0 +1,48 @@
+.contentItem {
+    list-style: none;
+    margin: 0 0 15px 15px;
+    border-radius: 10px;
+    padding: 13px;
+    background: linear-gradient(to bottom, #fff 0%, #f7f7f7 100%) no-repeat;
+    border: solid 1px #d5d5d5;
+}
+
+.contentItem a {
+    text-decoration: none;
+}
+
+.contentLink {
+    display: block;
+}
+
+.contentLink img {
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+.contentInfo {
+    line-height: 18px;
+    padding: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentTitle {
+    color: #666;
+    font-weight: 600;
+    
+}
+
+.contentRates {
+}
+
+.starJaune {
+    color: rgb(21, 145, 48);
+    font-weight: 900;
+}
+
+.starGris {
+    color: #d1d1d1;
+    font-weight: 900;
+}

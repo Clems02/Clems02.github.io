@@ -8,6 +8,7 @@ import Jeux from '../pages/jeux'
 
 function App() {
 
+
   return (
     <div className='background'>
       <NavBar />
