@@ -1,18 +1,54 @@
 import { game } from '../data/game'
 import GameWidget from '../components/gameWidget'
 import '../styles/jeux.css'
+import { useEffect, useState } from 'react'
 
 function Jeux() {
+    const [cat, setCat] = useState('Toutes');
+
+    const categories = ['Toutes'];
+
+    game.forEach(({ categorie }) => {
+        if (!categories.includes(categorie)) {
+            categories.unshift(categorie);
+        }
+    });
+
+    const handleClick = (e) => {
+        setCat(e.target.textContent)
+    }
+
+    const PrintJeux = () => {
+        if(cat === 'Toutes') {
+            return (
+                <>
+                {game.map(({ name, id, icone, rates, categorie }) => (
+                        <GameWidget key={id} name={name} icone={icone} rates={rates} categorie={categorie} />
+                    ))}
+                </>
+            )
+        } else {
+            return (
+                <>
+                {game.filter((val) => {
+                        return val.categorie.includes(cat);
+                    })
+                    .map(({ name, id, icone, rates, categorie }) => (
+                        <GameWidget key={id} name={name} icone={icone} rates={rates} categorie={categorie} />
+                    ))}
+                </>
+            )
+        }
+    }
+
     return (
         <>
             <div className='head'>
                 <h1>Jeux d'aventure</h1>
                 <ul className='cathead'>
-                    <li>Solo</li>
-                    <li>Casse-tête</li>
-                    <li>Clicker</li>
-                    <li>Autre</li>
-                    <li>Toutes</li>
+                    {categories.map((cat) => (
+                        <li key={cat} onClick={handleClick}>{cat}</li>
+                    ))}
                 </ul>
             </div>
 
@@ -26,13 +62,10 @@ function Jeux() {
 
             <div className='catcontent'>
                 <ul className='contentList'>
-                    {game.map(({name, icone, rates}) => (
-                        <GameWidget name={name} icone={icone} rates={rates}/>
-                    ))}                   
+                    <PrintJeux />
                 </ul>
             </div>
         </>
-
     )
 }
 
