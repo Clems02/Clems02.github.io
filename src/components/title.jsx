@@ -1,12 +1,11 @@
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.png'
 import '../styles/title.css'
 
 
 function Title() {
     return (
         <div className='title-block'>
-            <img src={logo} alt="Logo application" className='title-img' />
-            <h1 className='title-h1'>Rapid'Games</h1>
+            <img src={logo} alt="Rapid'Games logo" className='title-img' />
         </div>
     )
 }

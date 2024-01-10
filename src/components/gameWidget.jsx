@@ -1,6 +1,6 @@
 import '../styles/gameWidget.css'
 
-function GameWidget({ name, icone, succes }) {
+function GameWidget({ name, icone, rates }) {
     const rank = [1, 2, 3, 4, 5];
 
     return (
@@ -13,7 +13,7 @@ function GameWidget({ name, icone, succes }) {
                     </div>
                     <div className='contentRates'>
                         {rank.map((etoiles) =>
-                            (succes >= etoiles) ? <span className='starJaune'>★</span> : <span className='starGris'>☆</span>
+                            (rates >= etoiles) ? <span className='starJaune'>★</span> : <span className='starGris'>☆</span>
                         )}
                     </div>
                 </div>

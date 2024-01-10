@@ -24,7 +24,7 @@ export const widget = [
 
     },
     {
-        name: 'Mon compte',
+        name: 'Compte',
         id: '4cpt',
         icone: compte,
         link: '/compte'

@@ -2,53 +2,65 @@ nav {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: cadetblue;
-    border-bottom: 8px solid rgb(44, 128, 131);
-    height: 6em;
-
-    border-radius: 60px;
+    background-color: rgb(83, 178, 233);
+    border-bottom: 3px solid rgb(28, 102, 145);
 }
 
 .navBar-widget {
     display: flex;
-    height: 60%;
 }
+
+.navBar-right { 
+    background: url(../assets/cathead.png) left center no-repeat;
+    padding-left: 90px;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+
 
 .navBar-hamburger {
     position: absolute;
-    top: 2em;
-    right: 2em;
+    top: 0.9em;
+    right: 1em;
     flex-direction: column;
     justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1.7rem;
 }
 
 .navBar-hamburger span {
-    height: 0.4rem;
+    height: 0.35rem;
     width: 100%;
     background-color: rgb(77, 78, 80);
     border-radius: 0.2rem;
 }
 
+
+
+
 @media (max-width: 900px) {
     .navBar-widget {
-        display: none;
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 0;
-        left: 0;
-        background-color: rgb(255, 255, 255, 0.3);
-        backdrop-filter: blur(5px);
-        width: 100%;
-        height: 100vh;
         align-items: center;
         justify-content: center;
+
+        top: 0;
+        left: 0;
+
+        background-color: rgb(255, 255, 255, 0.75);
+        backdrop-filter: blur(5px);
+
+        width: 100%;
+        height: 100vh;        
+        
         margin-top: -500%;
-        transition: all 1s ease-out;
+        transition: all 0.5s ease-out;
     }
 
     .navBar-widget.isOpen {
@@ -61,8 +73,26 @@ nav {
     }
 
     .widget-block {
-        margin: 1rem 0;
-        width: 60%;
+        display: flex;
+        justify-content: center;
+
+        margin: 1.5em 0em;
+        width: 50%;
+        
+        gap: 1em;
+    }
+
+    .widget-block:not(.active) {
+        border: 6px double rgb(8, 110, 168);
+    }
+
+    .widget-block:not(.active):hover {
+        background-color: rgb(83, 178, 233);
+        border: 6px double rgb(8, 110, 168);
+    }
+
+    .active {
+        border-width: 8px;
     }
 }
 

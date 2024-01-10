@@ -8,7 +8,7 @@ function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        
+
         <nav>
 
             <Title />
@@ -19,11 +19,17 @@ function NavBar() {
                 <span></span>
             </div>
 
-            <ul className={`navBar-widget ${menuOpen ? "isOpen": ""}`} onClick={() => setMenuOpen(false)}>
+            <div className="navBar-right">
+                <ul className={`navBar-widget ${menuOpen ? "isOpen" : ""}`} onClick={() => setMenuOpen(false)}>
                 {widget.map(({ id, name, icone, link }) => (
-                    <Widget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen}/>
+                    <Widget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} />
                 ))}
             </ul>
+            </div>
+
+
+            
+
 
 
         </nav>

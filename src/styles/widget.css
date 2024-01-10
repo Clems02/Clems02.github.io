@@ -1,28 +1,34 @@
 .widget-block {
+    margin-right: 1.5em;
+    padding: 0 15px 0 10px;
+    
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    border-radius: 0.5rem;
+
+    border-radius: 45px;
+    border: 2px solid rgb(28, 102, 145);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-.widget-img {
-    width: 2.75rem;
-    height: 2.75rem;
+.widget-img { 
+    margin: 2px;
+    width: 2em;
+    height: 2em;
 }
 
 .widget-name {
-    color: rgb(77, 78, 80);
+    color: white;
     font-weight: 900;
+    font-size: 0.75em;
     text-decoration: underline;
-    font-size: 1.3em;
 }
 
 .active {
-    background-color: aquamarine;
+    background-color: rgb(8, 110, 168);
+    border: 4px double white;
 }
 
 .widget-block:not(.active):hover {
-    background-color: rgb(222, 248, 240);
+    border: 2px solid white;
+    transition: 0.3s ease;
 }
