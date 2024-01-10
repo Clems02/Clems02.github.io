@@ -1,5 +1,5 @@
 import { game } from '../data/game'
-import GameWidget from '../components/GameWidget.jsx'
+import GameWidget from '../components/gameWidget'
 import '../styles/jeux.css'
 
 function Jeux() {
