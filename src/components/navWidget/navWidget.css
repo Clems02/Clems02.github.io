@@ -23,7 +23,7 @@
     text-decoration: underline;
 }
 
-.active {
+.widget-block.active {
     background-color: rgb(8, 110, 168);
     border: 4px double white;
 }

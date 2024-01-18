@@ -28,6 +28,7 @@
     align-items: center;
 }
 
+
 .contentTitle {
     color: #666;
     font-weight: 600;
@@ -42,4 +43,23 @@
 .starGris {
     color: #d1d1d1;
     font-weight: 900;
+}
+
+/* Test animation*/
+
+.contentInfo:hover {
+    animation: animate 2s ease infinite reverse;
+}
+
+@keyframes animate {
+
+    25% {
+        transform: translate(-30%, 0);
+
+    }
+    75% {
+        transform: translate(30%, 0);
+    }
+
+
 }

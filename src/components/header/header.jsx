@@ -1,17 +1,17 @@
-import { widget } from "../data/widget"
-import Widget from "./widget"
-import Title from "./title"
-import '../styles/navBar.css'
+import { widget } from "../../data/widget"
+import NavWidget from '../navWidget/navWidget'
+import Title from "../title/title"
+import './header.css'
 import { useState } from "react"
 
-function NavBar() {
+function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
 
         <nav>
 
-            <Title />
+            <Title bgColor="rgba(0,0,0,0.15)" />
 
             <div className="navBar-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
@@ -22,7 +22,7 @@ function NavBar() {
             <div className="navBar-right">
                 <ul className={`navBar-widget ${menuOpen ? "isOpen" : ""}`} onClick={() => setMenuOpen(false)}>
                 {widget.map(({ id, name, icone, link }) => (
-                    <Widget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} />
+                    <NavWidget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} />
                 ))}
             </ul>
             </div>
@@ -36,4 +36,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default Header

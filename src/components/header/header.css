@@ -2,8 +2,8 @@ nav {
     position: sticky;
     top: 0;
     display: flex;
-    background-color: rgb(83, 178, 233);
-    border-bottom: 3px solid rgb(28, 102, 145);
+    background-color: var(--colorGeneral);
+    border-bottom: var(--borderGeneralTopBot);
 }
 
 .navBar-widget {
@@ -11,13 +11,14 @@ nav {
 }
 
 .navBar-right { 
-    background: url(../assets/cathead.png) left center no-repeat;
+    background: url(../../assets/cathead.png) left center no-repeat;
     padding-left: 90px;
     background-size: contain;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    z-index: 10;
 }
 
 

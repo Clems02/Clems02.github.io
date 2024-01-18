@@ -19,7 +19,7 @@
     align-items: center;
     height: 48px;
     padding-left: 90px;
-    background: url(../assets/cathead.png) left center no-repeat;
+    background: url(../../assets/cathead.png) left center no-repeat;
 }
 
 .cathead li {

@@ -1,0 +1,9 @@
+.compBlock {
+    max-width: 70em;
+    
+    
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px #d5d5d5;
+    box-shadow: 0px 0 5px 5px rgba(0, 0, 0, 0.15);
+}

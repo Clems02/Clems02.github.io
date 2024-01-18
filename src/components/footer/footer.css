@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--colorGeneral);
+    border-top: var(--borderGeneralTopBot);
+    display: flex;
+    justify-content: center;
+
+}
+
+.copyright {
+    align-items: center;
+    margin: auto 0;
+
+    font-weight: 700;
+    font-size: 0.6em;
+    color: rgb(28, 102, 145);
+
+    border: 3px solid rgb(28, 102, 145);
+    border-radius: 15px;
+
+    padding: 3px 10px;
+}

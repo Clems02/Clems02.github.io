@@ -1,0 +1,23 @@
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 30px;
+}
+
+.error p {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.error .back {
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(83, 178, 233);
+    color: white;
+}
+

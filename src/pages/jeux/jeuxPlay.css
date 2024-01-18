@@ -1,0 +1,69 @@
+.blockJeu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.zoneJeu {
+    background-color: black;
+    height: 20em;
+    width: 50em;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.zoneInfo {
+    background-color: #eee;
+    width: 100%;
+    border-top: dotted 1px #ccc;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+}
+
+.resumeJeu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descJeu {
+    color: #777;
+    padding: 10px 20px 20px 20px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+}
+
+.catJeu {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.catJeu span {
+    padding: 10px 20px;
+    text-decoration: underline;
+}
+
+.catJeu li {
+    list-style: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: #7a3;
+}
+
+h1 {
+    padding: 10px 20px 0px 20px;
+    color: #777;
+    text-decoration: underline;
+}
+
+
+
+

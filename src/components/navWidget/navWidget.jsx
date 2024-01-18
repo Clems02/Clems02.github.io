@@ -1,8 +1,8 @@
-import '../styles/widget.css'
+import './navWidget.css'
 import { NavLink } from 'react-router-dom'
 
 
-function Widget({ id, name, icone, link }) {
+function NavWidget({ name, icone, link }) {
     return (
             <NavLink to={link} className='widget-block'>
                 <img src={icone} alt={`${name}-icone`} className='widget-img' />
@@ -11,4 +11,4 @@ function Widget({ id, name, icone, link }) {
     )
 }
 
-export default Widget
+export default NavWidget

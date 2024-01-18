@@ -28,6 +28,12 @@ export const widget = [
         id: '4cpt',
         icone: compte,
         link: '/compte'
+    },
+    {
+        name: 'Test',
+        id: '5tte',
+        icone: compte,
+        link: '/test'
     }
 ]
 
