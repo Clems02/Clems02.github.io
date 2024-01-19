@@ -1,14 +1,13 @@
 .head {
-    background-color: #7a3;
-    display: flex;
+    background: linear-gradient(180deg, rgba(110,181,14,1) 0%, rgba(130,205,32,1) 50%, rgba(161,228,72,1) 100%);    display: flex;
     justify-content: space-between;
     padding-right: 20px; 
+    border-bottom: 3px solid #6eb50e;
 }
 
 .head h1 {
     color: white;
     padding: 0 15px;
-    background: rgba(0,0,0,0.15);
     height: 48px;
     line-height: 48px;
     font-size: 20px;
@@ -19,12 +18,15 @@
     height: 30px;
     margin: auto 0;
     border-radius: 10px;
-
-
+    text-align: center;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border-width: 2px;
 }
 
-option {
+.cathead option {
 }
+
 
 
 
