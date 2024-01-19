@@ -1,6 +1,8 @@
 .head {
     background-color: #7a3;
     display: flex;
+    justify-content: space-between;
+    padding-right: 20px; 
 }
 
 .head h1 {
@@ -14,15 +16,19 @@
 }
 
 .cathead {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    height: 48px;
-    padding-left: 90px;
-    background: url(../../assets/cathead.png) left center no-repeat;
+    height: 30px;
+    margin: auto 0;
+    border-radius: 10px;
+
+
 }
 
-.cathead li {
+option {
+}
+
+
+
+/* .cathead option {
     padding: 5px 15px;
     margin: 0 10px;
     font-weight: 700;
@@ -30,7 +36,7 @@
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.15);
     cursor: pointer;
-}
+} */
 
 .catdesc {
     display: flex;

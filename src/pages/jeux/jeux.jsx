@@ -28,11 +28,12 @@ function Jeux() {
 
             <div className='head'>
                 <h1>Nos jeux</h1>
-                <ul className='cathead'>
+                <select className='cathead' onChange={(e) => setCategorie(e.currentTarget.value)}>
+                    <option value="Toutes">- Catégorie -</option>
                     {gameCategorie().map((cat) => (
-                        <li key={cat} onClick={() => setCategorie(cat)} className={cat === categorie ? 'active' : null}>{cat}</li>
+                        <option key={cat} value={cat} className={cat === categorie ? 'active' : null}>{cat}</option>
                     ))}
-                </ul>
+                </select>
             </div>
 
             <div className='catdesc'>
