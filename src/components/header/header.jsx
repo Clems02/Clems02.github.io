@@ -20,18 +20,13 @@ function Header() {
             </div>
 
             <div className="navBar-right">
+                <div className={`filtre ${menuOpen ? "filtreActive" : ""}`}></div>
                 <ul className={`navBar-widget ${menuOpen ? "isOpen" : ""}`} onClick={() => setMenuOpen(false)}>
                 {widget.map(({ id, name, icone, link }) => (
                     <NavWidget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} />
                 ))}
             </ul>
             </div>
-
-
-            
-
-
-
         </nav>
     )
 }

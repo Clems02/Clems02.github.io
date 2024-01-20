@@ -1,5 +1,6 @@
 .head {
-    background: linear-gradient(180deg, rgba(110,181,14,1) 0%, rgba(130,205,32,1) 50%, rgba(161,228,72,1) 100%);    display: flex;
+    background: linear-gradient(180deg, rgba(110,181,14,1) 0%, rgba(130,205,32,1) 50%, rgba(161,228,72,1) 100%);    
+    display: flex;
     justify-content: space-between;
     padding-right: 20px; 
     border-bottom: 3px solid #6eb50e;

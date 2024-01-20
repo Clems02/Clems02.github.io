@@ -18,7 +18,9 @@
 .contentLink img {
     vertical-align: middle;
     border-radius: 6px;
-}
+    min-height: 110px;
+    width: 190px;
+}   
 
 .contentInfo {
     line-height: 18px;

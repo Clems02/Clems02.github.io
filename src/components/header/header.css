@@ -4,6 +4,7 @@ nav {
     display: flex;
     background-color: var(--colorGeneral);
     border-bottom: var(--borderGeneralTopBot);
+    height: 58px;
 }
 
 .navBar-widget {
@@ -20,8 +21,6 @@ nav {
     width: 100%;
     z-index: 10;
 }
-
-
 
 .navBar-hamburger {
     position: absolute;
@@ -40,10 +39,71 @@ nav {
     border-radius: 0.2rem;
 }
 
+@media screen and (max-width: 310px) {
+    .navBar-right {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navBar-widget {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        top: 58px;
+        right: -100vw;
+        min-height: calc(100vh - 58px);
+
+        background-color: #b9d1e7;        
+        
+        
+        
+        padding-top: 10px;
+        transition: all 0.4s ease-in-out;
+        border-left: var(--borderGeneralTopBot);
+    }
+
+    .navBar-widget::after {
+        content: "";
+        padding: 10px;
+    }
+
+    .navBar-widget.isOpen {
+        right: 0;
+    }
+
+    .navBar-hamburger {
+        display: flex;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .filtre  {
+        backdrop-filter: blur(5px);
+        background-color: rgb(255, 255, 255, 0.75);
+        position: fixed;
+        top: 58px;
+        left: -100vw;
+
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-out;
+    }
+
+    .filtreActive {
+        left: 0;
+    }
 
 
+    
 
-@media (max-width: 900px) {
+    
+}
+
+
+/* 
+@media (max-width: 992px) {
     .navBar-widget {
         position: absolute;
         display: flex;
@@ -62,6 +122,8 @@ nav {
         
         margin-top: -500%;
         transition: all 0.5s ease-out;
+
+
     }
 
     .navBar-widget.isOpen {
@@ -95,6 +157,6 @@ nav {
     .active {
         border-width: 8px;
     }
-}
+} */
 
 

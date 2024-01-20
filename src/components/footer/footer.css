@@ -3,7 +3,8 @@
     border-top: var(--borderGeneralTopBot);
     display: flex;
     justify-content: center;
-
+    position: absolute;
+    width: 100%;
 }
 
 .copyright {

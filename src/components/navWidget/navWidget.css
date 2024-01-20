@@ -32,3 +32,22 @@
     border: 2px solid white;
     transition: 0.3s ease;
 }
+
+@media screen and (max-width: 992px) {
+    .widget-block {
+        margin: 0 15px;
+        background-color: var(--colorGeneral);
+        border-color: white;
+    }
+
+    .widget-block.active {
+        border: 6px double white;
+        background-color: rgb(30, 93, 230);
+    }
+
+    
+
+
+}
+
+
