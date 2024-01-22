@@ -9,7 +9,7 @@ function GameWidget({game}) {
     return (
         <li className="contentItem">
             <NavLink to={`${game.id}`} className="contentLink">
-                <img src={game.icone} alt="test-IMG" />
+                <img src={game.icone} alt={`Image jeux: ${game.name}`} className='headImg' />
                 <div className="contentInfo">
                     <div className='contentTitle'>
                         {game.name}

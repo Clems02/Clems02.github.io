@@ -1,0 +1,45 @@
+.catdesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieceLogo {
+    height: 25px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.btnAchatPiece {
+    background-color: var(--colorGeneral);
+    border-radius: 45px;
+    border: 3px solid #fafafa;
+    width: 50%;
+    min-width: 200px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnAchatPiece:hover {
+    opacity: 0.8;
+}
+
+.btnAchatPiece:active {
+    background-color: white;
+    color: var(--colorGeneral);
+    border-color: var(--colorGeneral);
+}
+
+.test {
+    border: 3px solid black;
+}

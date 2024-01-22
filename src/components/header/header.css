@@ -5,6 +5,8 @@ nav {
     background-color: var(--colorGeneral);
     border-bottom: var(--borderGeneralTopBot);
     height: 58px;
+    z-index: 50;
+
 }
 
 .navBar-widget {
@@ -62,6 +64,8 @@ nav {
         padding-top: 10px;
         transition: all 0.4s ease-in-out;
         border-left: var(--borderGeneralTopBot);
+
+        z-index: 100;
     }
 
     .navBar-widget::after {
@@ -93,12 +97,9 @@ nav {
 
     .filtreActive {
         left: 0;
+
     }
 
-
-    
-
-    
 }
 
 

@@ -4,6 +4,7 @@
     background: url(../../assets/light-live-background-css.jpg);
     background-position: center;
     padding: 30px 0;
+    min-height: 100vh;
 }
 
 @media screen and (max-height: 500px) {

@@ -6,11 +6,6 @@ import AccordionItem from '../../components/accordionItem/accordionItem';
 import { DataAccueil } from '../../data/accueil'
 
 function Accueil() {
-    const [inc, setInc] = useState([1, 2, 3]);
-
-    const changeInc = () => {
-        setInc([...inc, 4]);
-    }
 
     return (
 

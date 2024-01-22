@@ -15,7 +15,7 @@
     display: block;
 }
 
-.contentLink img {
+.contentLink .headImg {
     vertical-align: middle;
     border-radius: 6px;
     min-height: 110px;
@@ -49,6 +49,7 @@
 
 /* Test animation*/
 
+/* 
 .contentInfo:hover {
     animation: animate 2s ease infinite reverse;
 }
@@ -64,4 +65,4 @@
     }
 
 
-}
+} */

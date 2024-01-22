@@ -1,0 +1,38 @@
+.boutiqueCard {
+    position: relative;
+}
+
+.contentPrice {
+    font-weight: 700;
+    line-height: 2rem;
+    border: 2px double grey;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 0px 20px 0px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconAddShop {
+    background-color: var(--colorGeneral);
+    display: flex;
+    padding: 6px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.iconAddShop:hover {
+    transform: rotate(360deg);
+}
+
+.articleImg {
+    height: 25px;
+    width: 30px;
+    margin-left: 5px;
+}
