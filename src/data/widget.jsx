@@ -8,6 +8,7 @@ import { GrTest } from "react-icons/gr";
 
 
 
+
 export const widget = [
     {
         name: 'Accueil',
@@ -39,6 +40,12 @@ export const widget = [
         id: '5tte',
         icone: <GrTest color='white' size="1.4em" style={{ margin: "4px 8px 4px 4px" }} />,
         link: '/test'
+    },
+    {
+        name: 'Connexion',
+        id: '6conx',
+        icone: <FaRegUser color='white' size="1.4em" style={{ margin: "4px 8px 4px 4px" }} />,
+        link: '/login'
     }
 ]
 

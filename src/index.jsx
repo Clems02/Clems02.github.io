@@ -11,10 +11,12 @@ import Error from './pages/error/error'
 
 import Compte from './pages/compte/compte'
 import Test from './pages/testTUTO/test.jsx'
+import Login from './pages/login/login.jsx'
 
 import './styles/app.css'
 import Footer from './components/footer/footer.jsx'
 import Main from './components/main/main.jsx'
+import Register from './pages/register/register.jsx'
 
 
 
@@ -29,9 +31,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
                 <Routes>
 
-                    
-                    
-
                     <Route path="/" element={<Accueil />} />
                     <Route path="/boutique" element={<Boutique />} />
 
@@ -41,11 +40,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path="/compte" element={<Compte />} />
 
                     <Route path="/test" element={<Test />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
 
 
 
                     <Route path="*" element={<Error />}/>
-
 
                 </Routes>
             
