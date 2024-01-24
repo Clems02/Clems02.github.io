@@ -61,6 +61,8 @@ function Register() {
                     <div className='loginInfo'><button className='loginBtn'>Valider</button></div>
                     
                 </form>
+
+            
                 
             </Block>
 </div>
