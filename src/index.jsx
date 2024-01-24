@@ -17,17 +17,27 @@ import './styles/app.css'
 import Footer from './components/footer/footer.jsx'
 import Main from './components/main/main.jsx'
 import Register from './pages/register/register.jsx'
+import { Auth0Provider } from '@auth0/auth0-react';
+
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Router>
 
-        <Header />
+    <Auth0Provider
+        domain="dev-al6bvhwynxbpv1ed.us.auth0.com"
+        clientId="rv6TyzWHcHkku7EbBR9ebNBIBLOiwlXE"
+        authorizationParams={{
+            redirect_uri: window.location.origin
+        }}>
 
-        <Main>
+        <Router>
 
-            
+            <Header />
+
+            <Main>
+
+
 
                 <Routes>
 
@@ -45,17 +55,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
 
-                    <Route path="*" element={<Error />}/>
+                    <Route path="*" element={<Error />} />
 
                 </Routes>
-            
 
 
-        </Main>
 
-        <Footer />
+            </Main>
 
-    </Router >
+            <Footer />
+
+        </Router >
+    </Auth0Provider>
 )
 
 

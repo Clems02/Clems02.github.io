@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Block from '../../components/block/block'
 import { NavLink } from 'react-router-dom';
+import { useAuth0 } from "@auth0/auth0-react";
 
 import './login.css'
 
@@ -22,6 +23,8 @@ function Login() {
             [e.currentTarget.name]: e.currentTarget.value
         })
     }
+
+    const { loginWithRedirect } = useAuth0();
 
     return (
         <div className='blockLogin'>
@@ -53,6 +56,8 @@ function Login() {
                         <NavLink to="/loginHelp" className="loginInfo helpLink">Login ou mot de passe oublié ?</NavLink>
                     </div>
                 </form>
+
+                <button onClick={() => loginWithRedirect()}>Log In</button>
                 
             </Block>
 </div>

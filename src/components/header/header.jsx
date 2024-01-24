@@ -4,8 +4,13 @@ import Title from "../title/title"
 import './header.css'
 import { useState } from "react"
 
+import { useAuth0 } from "@auth0/auth0-react";
+
+
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const { logout } = useAuth0();
+
 
     return (
 
@@ -22,10 +27,17 @@ function Header() {
             <div className="navBar-right">
                 <div className={`filtre ${menuOpen ? "filtreActive" : ""}`} onClick={() => setMenuOpen(false)}></div>
                 <ul className={`navBar-widget ${menuOpen ? "isOpen" : ""}`} >
-                {widget.map(({ id, name, icone, link }) => (
-                    <NavWidget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                ))}
-            </ul>
+                    {widget.map(({ id, name, icone, link }) => (
+                        <NavWidget key={id} name={name} icone={icone} link={link} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                    ))}
+                </ul>
+
+                {/**Test btn logout */}
+                <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                    Déconnexion
+                </button>
+
+
             </div>
         </nav>
     )
